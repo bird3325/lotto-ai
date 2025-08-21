@@ -1,0 +1,5 @@
+{
+  "name": "Lucky Lotto AI",
+  "description": "An AI-powered lottery number generator that analyzes recent winning numbers to suggest lucky combinations. Get your AI-recommended numbers and a QR code instantly.",
+  "requestFramePermissions": []
+}
