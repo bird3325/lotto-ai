@@ -1,6 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenAI, Type } from "@google/genai";
-import { LottoResult } from '@/types';
 
 // This is a Vercel Serverless Function
 export default async function handler(
@@ -54,7 +53,7 @@ export default async function handler(
         },
     });
     
-    const jsonString = geminiResponse.text.trim();
+    const jsonString = geminiResponse.text() || '';
     const parsedResult = JSON.parse(jsonString);
 
     if (
